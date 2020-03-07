@@ -72,3 +72,4 @@ class BurgersController < ApplicationController
       params.require(:burger).permit(:name, :price, :image, :nutriscore, :code)
     end
 end
+  
