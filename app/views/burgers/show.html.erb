@@ -31,11 +31,10 @@
         <th>Qté</th>
   </thead>
   <tbody>
-  #boucle en html
     <% @burger.nutriment.each do |burger| %> 
     <tr>
       <td><%= burger[0] %></td>
-      <td<%= burger[1] %></td>
+      <td><%= burger[1] %></td>
     </tr>
   <% end %>
   </tbody>
