@@ -24,6 +24,21 @@
   <strong>Code:</strong>
   <%= @burger.code %>
 </p>
-
+<table>
+  <thead>
+    <tr>
+      <th>Nom Nutri</th>
+        <th>Qté</th>
+  </thead>
+  <tbody>
+  #boucle en html
+    <% @burger.nutriment.each do |burger| %> 
+    <tr>
+      <td><%= burger[0] %></td>
+      <td<%= burger[1] %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
 <%= link_to 'Edit', edit_burger_path(@burger) %> |
 <%= link_to 'Back', burgers_path %>
